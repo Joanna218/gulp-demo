@@ -1,0 +1,83 @@
+$fa-font-path: "/build/fonts/";
+@import "font-awesome/fontawesome";
+@import "font-awesome/brands.scss";
+@import "font-awesome/solid.scss";
+// @import "bootstrap-cust";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+/*  樣式變數定義  */
+
+@import "var";
+
+/*  mixins定義 */
+
+@import "mixin";
+
+/*  全站統一性定義  */
+
+@import "global";
+body {
+  background-color: $default-bgcolor;
+  .container {
+    // background-color: $container-bgcolor;
+    .blog-header {
+      > div {
+        // background-color: $primary;
+        min-height: 120px;
+      }
+    }
+  }
+
+  .blog-header-logo {
+    overflow: hidden;
+    text-indent: -999px;
+    background-repeat: no-repeat;
+    background-image: url(/build/images/gulp.png);
+    background-position: center;
+    background-size: 64px;
+    display: block;
+    height: 128px;
+    width: 128px;
+    margin: 15px auto;
+  }
+  .quick-link-icon {
+    margin-top: 60px;
+    .list-inline-item {
+      .icon {
+        display: inline-block;
+        text-indent: -999px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.slider-pro {
+  margin-bottom: 15px;
+}
+
+.blog-post {
+  margin-bottom: 18px;
+  .blog-post-title {
+    .sub {
+      color: #ff8551;
+      font-size: 50%;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+/*
+.user {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}*/

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="張鈞婷">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gulp Example</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!--
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+-->
+	<link href="build/css/index.css" rel="stylesheet">
+	<link href="build/sprite.css" rel="stylesheet">
+	<link href="build/css/venders.min.css" rel="stylesheet">
+	<link href="build/js/venders.min.js" rel="stylesheet">
+	<link rel="stylesheet" href="node_modules/slider-pro/dist/css/slider-pro.min.css"/>
+</head>
+<body>
+	<div class="container">
+		<header class="blog-header">
+			<div class="row flex-nowrap justify-content-end align-items-center">
+				<div class="col-4 offset-4 text-center">
+					<a href="#" class="blog-header-logo text-dark">Gulp Logo</a>
+				</div>
+				<div class="col-4 d-flex justify-content-end align-items-center">
+					<ul class="list-inline quick-link-icon">
+						<li class="list-inline-item">
+							<a href="#">
+								<span class="icon icon-briefcase">　　</span>
+							</a>
+						<li class="list-inline-item">
+							<a href="#">
+								<span class="icon icon-clock">　　</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#">
+								<span class="icon icon-mark">　　</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#">
+								<span class="icon icon-setting">　　</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- menu start !-->
+		<div class="nav-scroller py-1  bg-white">
+			<nav class="nav d-flex justify-content-between">
+			<a class="p-2 text-muted" href="#">關於我們</a>
+			<a class="p-2 text-muted" href="#">最新消息</a>
+			<a class="p-2 text-muted" href="#">專案列表</a>
+			<a class="p-2 text-muted" href="#">聯絡我們</a>
+		</div>
+		<!-- slider port !-->
+		<div class="row strict0">
+			<div class="col-12">
+				<div id="main-banner" class="slider-pro" id="my-slider">
+					<div class="sp-slides">
+						<div class="sp-slide">
+							<img class="sp-image" src="build/images/slider-pro/dist/css/images/blank.gif" data-src="build/images/banner1.jpeg">
+						</div>
+						<div class="sp-slide">
+							<img class="sp-image" src="build/images/slider-pro/dist/css/images/blank.gif" data-src="build/images/banner2.jpeg">
+						</div>
+						<div class="sp-slide">
+							<img class="sp-image" src="build/images/slider-pro/dist/css/images/blank.gif" data-src="build/images/banner3.jpeg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 兩張卡片 !-->
+		<div class="row bg-white">
+			<div class="col-md-6">
+				<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relation">
+					<div class="col p-4 d-flex flex-column position-static">
+						<strong class="d-inline-block mb-2 text-primary">最新案件</strong>
+						<h3 class="mb-0">資管系作業一</h3>
+						<div class="mb-2 text-muted">3月17日</div>
+						<p class="card-text mb-auto">這是一個能在本機環境開發的前端網站，使用SASS建構出快速的CSS環境</p>
+						<a href="#" class="stretched-link">繼續閱讀...</a>
+					</div>
+					<div class="col-auto d-none d-lg-block">
+						<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org.2000/svg" preserveAspevtRatio="xMidYMid slice" focusable="false" role="img" aria="Placeholder: Thumbnail">
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#de9943" />
+							<text x="50%" y="50%" fill="#ff0000 dy=".3em">縮圖</text>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relation">
+					<div class="col p-4 d-flex flex-column position-static">
+						<strong class="d-inline-block mb-2 text-primary">最讚案件</strong>
+						<h3 class="mb-0">資管系作業二</h3>
+						<div class="mb-2 text-muted">3月17日</div>
+						<p class="card-text mb-auto">這是一個能在本機環境開發的前端網站，使用Gulp在Node.js環境下開發的快速開發環境</p>
+						<a href="#" class="stretched-link">繼續閱讀...</a>
+					</div>
+					<div class="col-auto d-none d-lg-block">
+						<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org.2000/svg" preserveAspevtRatio="xMidYMid slice" focusable="false" role="img" aria="Placeholder: Thumbnail">
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#de9943" />
+							<text x="50%" y="50%" fill="#ffffff dy=".3em">Thumbnail</text>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- .container -->
+	<main role="main" class="container bg-white">
+		<div class="row">
+			<div class="col-md-8 blog-main">
+				<h3 class="pb-4 mb-4 font-italic border-bootom">
+					網站消息
+				</h3>
+				<div class="blog-post">
+					<h2 class="blog-post-title">
+						第一篇消息
+						<small class="sub">2019-3-17</small>
+						<p>測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章<br/></p>
+					</h2>
+				</div>
+				<div class="blog-post">
+					<h2 class="blog-post-title">
+						第二篇消息
+						<small class="sub">2019-3-24</small>
+						<p>測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章測試文章</p>
+					</h2>
+				</div>
+			</div>
+			<div class="col-md-4 blog-slidebar">
+				<div class="p-4 mb-3 bg-light rounded">
+					<h4 class="font-italic">About</h4>
+					<p class="mb-0">
+						test About Data <em>Test Data</em>
+					</p>
+				</div>
+				<div class="p-4">
+					<h4 class="font-italic">Elsewhere</h4>
+					<div class="html-code grid-of-images">
+					<div class="popup-gallery">
+					<a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg"
+							title="The Cleaner">
+							<img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg"
+							width="75" height="75">
+					</a>
+					<a href="http://farm9.staticflickr.com/8382/8558295633_0f56c1284f_b.jpg"
+							title="Winter Dance">
+							<img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg"
+							width="75" height="75">
+					</a>
+					<a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg"
+							title="The Uninvited Guest">
+							<img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg"
+							width="75" height="75">
+					</a>
+					<a href="http://farm9.staticflickr.com/8383/8563475581_dg05e9906d_b.jpg"
+							title="Oh no,not Again!">
+							<img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg"
+							width="75" height="75">
+					</a>
+					<a href="http://farm9.staticflickr.com/8235/8559402846_8b7f2e05d_b.jpg"
+							title="Swan Lake">
+							<img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg"
+							width="75" height="75">
+					</a>
+					<a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg"
+							title="The Shake">
+							<img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg"
+							width="75" height="75">
+					</a>
+					<a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg"
+					title="who's that,mommy?">
+					<img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg"
+					width="75" height="75">
+					</a>
+					</div>
+					</div>
+					</div>
+			</div>
+		</div>
+	</main>
+	<footer">
+		<div class="container">
+			<div class="row bg-dark">
+				<div class="col-8">
+					<ul class="social-list list-inline">
+						<li class="list-inline-item">
+							<a href="#"><i class="fab fa-line fa-5x" style="color:white"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#"><i class="fab fa-linkedin fa-5x" style="color:white"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#"><i class="fab fa-instagram fa-5x" style="color:white"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<div class="copyright ">
+							<h6 class="title text-white">本網站設計者名單</h6>
+							<dl class="designer text-white">
+									<dt>學號<span calss="name">姓名</span></dt>
+									<dd>10544218<span class="name">林靜妤</span></dd>
+							</dl>
+							<dl class="designer text-white">
+											<dt>學號<span calss="name">姓名</span></dt>
+											<dd>10544231<span class="name">林俞萱</span></dd>
+							</dl>
+							<dl class="designer text-white">
+											<dt>學號<span calss="name">姓名</span></dt>
+											<dd>10544208<span class="name">張鈞婷</span></dd>
+							</dl>
+					</div>
+					</div>
+			</div>
+		</div>
+	</footer>
+<script src="build/js/venders.min.js"></script>
+<script src="build/js/app.js"></script>
+
+</body>
+</html>
